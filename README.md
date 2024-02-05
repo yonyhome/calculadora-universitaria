@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Prueba Técnica - Calculadora Universitaria en ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objetivo
+Crear una aplicación de calculadora universitaria en ReactJS que permita a los estudiantes gestionar sus notas y obtener información detallada sobre cada materia y sus componentes.
 
-## Available Scripts
+## Requisitos
+1. Utilizar la biblioteca ReactJS para construir la aplicación.
+2. Utilizar el conjunto de datos de ejemplo proporcionado como datos iniciales para la aplicación.
+3. La aplicación debe mostrar el PGA actual, los créditos acumulados y el listado de materias del semestre.
 
-In the project directory, you can run:
+## Funcionalidades Principales
+1. Mostrar la información general del semestre, incluyendo el PGA actual y los créditos acumulados.
+2. Mostrar un listado de materias del semestre con su nombre, nota general y créditos.
+3. Permitir al usuario hacer clic en una materia para ver información detallada.
+4. Para cada materia, mostrar una lista de componentes (por ejemplo, parciales) con sus respectivas notas, pesos y estados (evaluado o no evaluado).
 
-### `npm start`
+## Requisitos Adicionales (Opcionales)
+1. Implementar un diseño responsivo para que la aplicación sea compatible con diferentes tamaños de pantalla.
+2. Agregar la capacidad de editar las notas y pesos de los componentes de una materia.
+3. Implementar un sistema de bloqueo/desbloqueo para las notas y componentes.
+4. Agregar validaciones para garantizar que las notas y pesos estén dentro de rangos válidos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Entregables
+1. Código fuente de la aplicación en un repositorio Git (por ejemplo, en GitHub).
+2. Instrucciones claras para ejecutar la aplicación localmente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Criterios de Evaluación
+1. Cumplimiento de los requisitos especificados.
+2. Claridad y estructura del código.
+3. Manejo de estados y propiedades en ReactJS.
+4. Diseño y usabilidad de la aplicación.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Fecha de Entrega
+La fecha de entrega para la prueba técnica es 06/02/2024.
