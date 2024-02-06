@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/styles.css';
 
-const CourseListComponent = ({ courses }) => {
+const CourseListComponent = ({ courses, semestre }) => {
   return (
     <div className="course-list">
-      <h2>Materias Registradas</h2>
+      <h2>Materias Registradas {semestre}</h2>
       <table className="course-table">
         <thead>
           <tr>
@@ -24,6 +24,9 @@ const CourseListComponent = ({ courses }) => {
           ))}
         </tbody>
       </table>
+      <Link to="/average-history">
+        <button className="recalculate-button">ver promedio historico</button>
+      </Link>
     </div>
   );
 };

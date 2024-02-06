@@ -93,7 +93,7 @@
                 {
                     "id": "3",
                     "name": "Parcial 3",
-                    "grade": 3.9,
+                    "grade": 0,
                     "weight": 40,
                     "wasEvaluated": false,
                     "isLocked": true
@@ -115,9 +115,9 @@
                 {
                     "id": "2",
                     "name": "Proyecto",
-                    "grade": 3.7,
+                    "grade": 0,
                     "weight": 50,
-                    "wasEvaluated": true,
+                    "wasEvaluated": false,
                     "isLocked": true
                 }
             ]

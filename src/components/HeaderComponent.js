@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Asegúrate de importar Link
 import arrowUpIcon from '../assets/img/arrow.png'; // Importa tu icono
 import '../assets/styles/styles.css';
 
-const HeaderComponent = ({ semesterName }) => {
+const HeaderComponent = ({ semesterName}) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

@@ -118,7 +118,7 @@ const CourseDetailComponent = ({ courses, semesterCourses, updateSemesterCourses
     if (!hasUngradedComponents) return null;
   
     return (
-      <button className="recalculate-button" onClick={handleRecalculate}>Recalcular Promedio</button>
+      <button className="recalculate-button" onClick={handleRecalculate}>Simular Promedio</button>
     );
   };
   

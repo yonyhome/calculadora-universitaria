@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './assets/styles/styles.css';
 import HeaderComponent from './components/HeaderComponent';
 import CourseListComponent from './components/CourseListComponent';
-import SemesterSummaryComponent from './components/SemesterSummaryComponent';
 import CourseDetailComponent from './components/CourseDetailComponent';
 import data from './fake-data.json';
+import HistoryAvergeComponent from './components/HistoyAverageComponent';
 
 function App() {
   const [semesterCourses, setSemesterCourses] = useState(data.semester.courses);
@@ -34,19 +34,17 @@ function App() {
     <div className="glass-container">
       <Router>
         <div className="App">
-          <HeaderComponent semesterName={data.semester.name} />
+          <HeaderComponent semesterName={data.semester.name } />
           <Routes>
             <Route
               path="/"
               element={(
                 <>
-                  <SemesterSummaryComponent
-                    semesterAverage={data.currentPGA}
-                    cumulativeAverage={data.creditsSoFar}
-                  />
+                  
                   <CourseListComponent
                     courses={semesterCourses}
                     updateSemesterCourses={updateSemesterCourses}
+                    semestre={data.semester.name}
                   />
                 </>
               )}
@@ -57,6 +55,15 @@ function App() {
                 courses={data.courses}
                 semesterCourses={semesterCourses}
                 updateSemesterCourses={updateSemesterCourses}
+              />}
+            />
+            <Route
+              path="/average-history"
+              element={<HistoryAvergeComponent
+                currentPGA={data.currentPGA}
+                creditsSoFar={data.creditsSoFar}
+                courses={data.courses}
+                semester={data.semester}
               />}
             />
           </Routes>
