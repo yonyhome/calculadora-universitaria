@@ -1,5 +1,46 @@
 # Prueba Técnica - Calculadora Universitaria en ReactJS
 
+Este proyecto es una calculadora universitaria desarrollada en React que te permite calcular promedios y notas necesarias para alcanzar un promedio deseado en un semestre.
+
+## Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu sistema:
+
+- **Node.js:** [Descargar e Instalar Node.js](https://nodejs.org/)
+- **npm (Administrador de Paquetes de Node.js):** Se instala automáticamente con Node.js.
+
+## Pasos para Instalar y Ejecutar
+
+Sigue estos pasos para descargar, instalar las dependencias y ejecutar el proyecto:
+
+### 1. Clona el Repositorio
+
+Abre una terminal y ejecuta el siguiente comando para clonar el repositorio desde GitHub:
+
+```git clone https://github.com/yonyhome/calculadora-universitaria.git```
+
+### 2. Accede al Directorio del Proyecto
+
+Cambia al directorio del proyecto utilizando el siguiente comando:
+
+```cd calculadora-universitaria```
+
+### 3. Instala las Dependencias
+
+Utiliza npm para instalar todas las dependencias necesarias. Ejecuta el siguiente comando:
+
+```npm install```
+
+### 4. Ejecuta la Aplicación
+
+Una vez que todas las dependencias se hayan instalado correctamente, puedes ejecutar la aplicación con el siguiente comando:
+
+```npm start```
+
+### 5. Visualiza la Aplicación
+
+Después de ejecutar el comando anterior, la aplicación se abrirá automáticamente en tu navegador predeterminado. Si no ocurre, puedes acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
+
 ## Objetivo
 Crear una aplicación de calculadora universitaria en ReactJS que permita a los estudiantes gestionar sus notas y obtener información detallada sobre cada materia y sus componentes.
 
@@ -20,9 +61,6 @@ Crear una aplicación de calculadora universitaria en ReactJS que permita a los 
 3. Implementar un sistema de bloqueo/desbloqueo para las notas y componentes.
 4. Agregar validaciones para garantizar que las notas y pesos estén dentro de rangos válidos.
 
-## Entregables
-1. Código fuente de la aplicación en un repositorio Git (por ejemplo, en GitHub).
-2. Instrucciones claras para ejecutar la aplicación localmente.
 
 ## Criterios de Evaluación
 1. Cumplimiento de los requisitos especificados.
@@ -30,5 +68,4 @@ Crear una aplicación de calculadora universitaria en ReactJS que permita a los 
 3. Manejo de estados y propiedades en ReactJS.
 4. Diseño y usabilidad de la aplicación.
 
-## Fecha de Entrega
-La fecha de entrega para la prueba técnica es 06/02/2024.
+
