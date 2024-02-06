@@ -12,7 +12,24 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.course-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+.course-list th, .course-list td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-list th {
+  background-color: #f2f2f2;
+}
+
+.course-list tr:hover {
+  background-color: #f2f2f2;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

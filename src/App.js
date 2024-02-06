@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import './assets/styles/styles.css';
 import HeaderComponent from './components/HeaderComponent';
 import CourseListComponent from './components/CourseListComponent';
 import SemesterSummaryComponent from './components/SemesterSummaryComponent';
@@ -8,33 +8,61 @@ import CourseDetailComponent from './components/CourseDetailComponent';
 import data from './fake-data.json';
 
 function App() {
+  const [semesterCourses, setSemesterCourses] = useState(data.semester.courses);
+
+  const updateSemesterCourses = (id, newComponents) => {
+    const updatedSemesterCourses = [...semesterCourses];
+    const index = updatedSemesterCourses.findIndex(course => course.id === id);
+    updatedSemesterCourses[index].components = [...newComponents];
+
+    // Recalcular el promedio del curso y actualizar el estado global del semestre
+    let totalWeightedGrade = 0;
+    let totalWeight = 0;
+
+    updatedSemesterCourses[index].components.forEach(component => {
+      totalWeightedGrade += component.grade * component.weight;
+      totalWeight += component.weight;
+    });
+
+    const newCourseGrade = totalWeight !== 0 ? totalWeightedGrade / totalWeight : 0;
+    updatedSemesterCourses[index].grade = newCourseGrade;
+
+    setSemesterCourses(updatedSemesterCourses);
+  };
+
   return (
-    <Router>
-      <div className="App">
-        <HeaderComponent semesterName={data.semester.name} />
-        <Routes>
-          <Route path="/">
-            <Route
-              index
-              element={<CourseListComponent courses={data.semester.courses} />}
-            />
+    <div className="glass-container">
+      <Router>
+        <div className="App">
+          <HeaderComponent semesterName={data.semester.name} />
+          <Routes>
             <Route
               path="/"
-              element={<SemesterSummaryComponent
-                semesterAverage={data.currentPGA}
-                cumulativeAverage={data.creditsSoFar} />}
+              element={(
+                <>
+                  <SemesterSummaryComponent
+                    semesterAverage={data.currentPGA}
+                    cumulativeAverage={data.creditsSoFar}
+                  />
+                  <CourseListComponent
+                    courses={semesterCourses}
+                    updateSemesterCourses={updateSemesterCourses}
+                  />
+                </>
+              )}
             />
-          </Route>
-          <Route
-            path="/course/:id"
-            element={<CourseDetailComponent
-              courses={data.courses}
-              semesterCourses={data.semester.courses}
-            />}
-          />
-        </Routes>
-      </div>
-    </Router>
+            <Route
+              path="/course/:id"
+              element={<CourseDetailComponent
+                courses={data.courses}
+                semesterCourses={semesterCourses}
+                updateSemesterCourses={updateSemesterCourses}
+              />}
+            />
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 }
 

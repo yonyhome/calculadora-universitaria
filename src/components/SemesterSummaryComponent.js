@@ -1,11 +1,11 @@
 import React from 'react';
-
-const SemesterSummaryComponent = ({ semesterAverage, cumulativeAverage }) => {
+import '../assets/styles/styles.css';
+const SemesterSummaryComponent = ({ semesterAverage, cumulativeAverage: creditsofar }) => {
   return (
     <div className="semester-summary">
       <h2>Resumen del Semestre</h2>
-      <p>Promedio del Semestre: {semesterAverage}</p>
-      <p>Promedio Acumulado: {cumulativeAverage}</p>
+      <p>Promedio Acumulado: {semesterAverage}</p>
+      <p>Creditos Aprovados: {creditsofar}</p>
     </div>
   );
 };

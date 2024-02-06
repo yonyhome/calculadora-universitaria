@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/fondo.jpg');
+  background-size: cover; /* Para que la imagen cubra todo el fondo */
+  background-position: center; /* Para centrar la imagen */
+  font-family: Arial, sans-serif; /* Opcional: especifica una fuente para el texto */
+  color: white; /* Color de texto */
+}
+
+  
+  .glass-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    color: white; /* Ajusta el color del texto del contenedor glass */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+  }
+  .header .scroll-to-top {
+    position: absolute; /* Establece la posición absoluta para posicionar la imagen dentro del encabezado */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    width: 20px; /* Establece el ancho de la imagen */
+    height: 20px; /* Establece la altura de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  }
+  .calculator {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .left-align {
+    text-align: left;
+  }
+  
+  .button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: darkred;
+  }
+  .course-list {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo que resalta sobre el negro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo de la tabla */
+    border: 1px solid #ddd; /* Borde alrededor de la tabla */
+  }
+  
+  .course-table th, .course-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid white; /* Establece todos los bordes de las celdas */
+  }
+  
+  .course-table th {
+    background-color: #555; /* Color de fondo para el encabezado */
+    color: white; /* Color de texto para el encabezado */
+  }
+  
+  .course-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para las filas pares */
+  }
+  
+  .course-table tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón sobre las filas */
+  }
+  
+  .course-table td:nth-child(1) { /* Ajusta el color del texto en la segunda columna */
+    color: black;
+  }
+  .course-detail input[type="number"] {
+    width: auto; /* Ancho automático para adaptarse al contenido */
+    max-width: 40px; /* Ancho máximo para limitar el crecimiento en caso necesario */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  .recalculate-button {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .recalculate-button:hover {
+    background-color: darkred;
+  }
+  
+  .course-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  

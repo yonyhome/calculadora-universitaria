@@ -95,7 +95,7 @@
                     "name": "Parcial 3",
                     "grade": 3.9,
                     "weight": 40,
-                    "wasEvaluated": true,
+                    "wasEvaluated": false,
                     "isLocked": true
                 }
             ]
@@ -129,17 +129,33 @@
                 {
                     "id": "1",
                     "name": "Examen 1",
-                    "grade": 4.1,
-                    "weight": 40,
-                    "wasEvaluated": true,
+                    "grade": 0,
+                    "weight": 25,
+                    "wasEvaluated": false,
                     "isLocked": true
                 },
                 {
                     "id": "2",
                     "name": "Examen 2",
-                    "grade": 3.9,
-                    "weight": 60,
-                    "wasEvaluated": true,
+                    "grade": 0,
+                    "weight": 25,
+                    "wasEvaluated": false,
+                    "isLocked": true
+                },
+                {
+                    "id": "3",
+                    "name": "Examen 2",
+                    "grade": 0,
+                    "weight": 25,
+                    "wasEvaluated": false,
+                    "isLocked": true
+                },
+                {
+                    "id": "4",
+                    "name": "Proyecto final",
+                    "grade": 0,
+                    "weight": 25,
+                    "wasEvaluated": false,
                     "isLocked": true
                 }
             ]
